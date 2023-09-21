@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 const App = () => {
-
-  const now = new Date()
-  const a = 10 
-  const b = 20
-  console.log(`${now}, ${a+b}`)
+  const friends = [
+    { name: 'Leevi', age: 4 },
+    { name: 'Venla', age: 10 },
+  ]
 
   return (
-    <>    
-      <p>Hello world, it is {now.toString()}</p>
-      <p>{a} plus {b} is {a+b}</p>
-    </>
+    <div>
+      <p>{friends[0].name} {friends[0].age}</p>
+      <p>{friends[1].name} {friends[1].age}</p>
+    </div>
   )
 }
 
