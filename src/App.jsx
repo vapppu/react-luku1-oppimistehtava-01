@@ -1,9 +1,4 @@
-const Hello = (props) => {
-  const { name, age } = props
-
-  console.log("In Hello component");
-  console.log(props)
-
+const Hello = ({name, age}) => {
 
   const bornYear = () => new Date().getFullYear() - age
 
